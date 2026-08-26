@@ -18,7 +18,7 @@ import { ModelTokenPrice, PricingManifest, TokenPrices } from '../domain/pricing
 const CACHE_FILE = 'pricing-manifest.json';
 const TOKEN_PRICES_CACHE_FILE = 'token-prices.json';
 const REMOTE_URL =
-  'https://raw.githubusercontent.com/RedPandaMC/mallard/main/media/pricing-manifest.json';
+  'https://raw.githubusercontent.com/RelativelyUnknown/mallard/main/media/pricing-manifest.json';
 const OPENROUTER_MODELS_URL = 'https://openrouter.ai/api/v1/models';
 const LITELLM_PRICES_URL =
   'https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json';

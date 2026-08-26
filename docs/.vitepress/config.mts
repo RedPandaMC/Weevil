@@ -4,7 +4,7 @@ import { withMermaid } from 'vitepress-plugin-mermaid';
 // NOTE: these URLs assume the GitHub repo has been renamed to "Mallard"
 // (Pages then serves the site at /Mallard/). The rename happens right after
 // this lands on main; until then the published docs link may 404 briefly.
-const site = 'https://redpandamc.github.io/Mallard';
+const site = 'https://relativelyunknown.github.io/Mallard';
 const ogImage = `${site}/brand/og-dark.png`;
 const desc = "Mallard reads Copilot's local usage logs and shows a live dashboard of spend, model usage, and where every credit goes. No telemetry by default; sign-in and export are opt-in.";
 
@@ -63,7 +63,7 @@ export default withMermaid(defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/RedPandaMC/Mallard/edit/main/docs/:path',
+      pattern: 'https://github.com/RelativelyUnknown/Mallard/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
 
@@ -72,11 +72,11 @@ export default withMermaid(defineConfig({
       next: 'Next →',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/RedPandaMC/Mallard' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/RelativelyUnknown/Mallard' }],
 
     footer: {
       message: `v1 · Built for VS Code · MIT License`,
-      copyright: '© 2026 RedPandaMC',
+      copyright: '© 2026 RelativelyUnknown',
     },
   },
 }));

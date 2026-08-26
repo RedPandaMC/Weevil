@@ -24,12 +24,12 @@ spec:
       containers:
         - name: mallard-server
           # Immutable tag for reproducible rollouts and reliable rollback. The
-          # release process publishes ghcr.io/redpandamc/mallard-server:<version>
+          # release process publishes ghcr.io/relativelyunknown/mallard-server:<version>
           # (and :<git-sha>); bump this tag per release (or override it centrally
           # via the `images:` transformer in kustomization.yaml). Rollback =
           # re-point to the previous immutable tag. imagePullPolicy IfNotPresent
           # is safe because an immutable tag never moves under a running pod.
-          image: ghcr.io/redpandamc/mallard-server:v1.0.0
+          image: ghcr.io/relativelyunknown/mallard-server:v1.0.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080

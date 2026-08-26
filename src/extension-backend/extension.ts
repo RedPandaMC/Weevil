@@ -139,7 +139,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
         ).then(async (choice) => {
           if (choice === 'Learn more') {
             await vscode.env.openExternal(
-              vscode.Uri.parse('https://redpandamc.github.io/Mallard/guide/troubleshooting#remote-ssh'),
+              vscode.Uri.parse('https://relativelyunknown.github.io/Mallard/guide/troubleshooting#remote-ssh'),
             );
           }
           if (choice === "Don't show again") {
@@ -332,7 +332,7 @@ function registerCommands(context: vscode.ExtensionContext, c: Container): void 
       'Continue',
     );
     if (ok !== 'Continue') return;
-    await vscode.commands.executeCommand('workbench.extensions.search', '@id:RedPandaMC.mallard');
+    await vscode.commands.executeCommand('workbench.extensions.search', '@id:RelativelyUnknown.mallard');
     void vscode.window.showInformationMessage('Mallard: Click "Disable" next to Mallard above.');
   });
 

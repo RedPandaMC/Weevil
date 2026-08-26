@@ -3,7 +3,7 @@
 The full specification moved to the documentation site so it can't drift from
 the copy users read there:
 
-**[Authentication & Identity Reference](https://redpandamc.github.io/Mallard/reference/extension-auth)**
+**[Authentication & Identity Reference](https://relativelyunknown.github.io/Mallard/reference/extension-auth)**
 (source: [`docs/reference/extension-auth.md`](../../../docs/reference/extension-auth.md))
 
 Quick summary of the model:

@@ -3,17 +3,17 @@
   "displayName": "Mallard",
   "description": "Get your Copilot spend all in a row. A live dashboard of cost, model usage, and where every credit goes — read from Copilot's local logs. No sign-in, no telemetry.",
   "version": "0.2.0",
-  "publisher": "RedPandaMC",
+  "publisher": "RelativelyUnknown",
   "license": "MIT",
   "author": {
     "name": "Jurrean De Nys"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RedPandaMC/Mallard.git"
+    "url": "https://github.com/RelativelyUnknown/Mallard.git"
   },
   "bugs": {
-    "url": "https://github.com/RedPandaMC/mallard/issues"
+    "url": "https://github.com/RelativelyUnknown/mallard/issues"
   },
   "engines": {
     "vscode": "^1.95.0"
@@ -382,5 +382,5 @@
     "vitepress-plugin-mermaid": "^2.0.17",
     "zustand": "^5.0.14"
   },
-  "homepage": "https://redpandamc.github.io/Mallard/"
+  "homepage": "https://relativelyunknown.github.io/Mallard/"
 }

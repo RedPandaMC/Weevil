@@ -14,7 +14,7 @@ From the Marketplace: open Extensions (`Ctrl+Shift+X`), search **Mallard**, clic
 Or from the CLI:
 
 ```bash
-code --install-extension RedPandaMC.mallard
+code --install-extension RelativelyUnknown.mallard
 ```
 
 ## First run

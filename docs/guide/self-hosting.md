@@ -55,7 +55,7 @@ With OpenBao, the server fetches credentials live and caches them for 30 seconds
 ## Quick start (Docker Compose)
 
 ```bash
-git clone https://github.com/RedPandaMC/Mallard.git
+git clone https://github.com/RelativelyUnknown/Mallard.git
 cd Mallard/server/docker
 cp .env.example .env
 ```
