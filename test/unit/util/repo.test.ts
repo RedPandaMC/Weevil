@@ -23,7 +23,7 @@ function fakeGitApi(overrides: Record<string, unknown> = {}) {
   const repo = {
     rootUri: vscode.Uri.file('/work/mallard'),
     state: {
-      remotes: [{ name: 'origin', fetchUrl: 'git@github.com:RedPandaMC/Mallard.git' }],
+      remotes: [{ name: 'origin', fetchUrl: 'git@github.com:RelativelyUnknown/Mallard.git' }],
       HEAD: { name: 'feature/refinement' },
     },
   };
@@ -66,9 +66,9 @@ describe('util/repo — attribution', () => {
     ws.getWorkspaceFolder = (() => folder) as typeof ws.getWorkspaceFolder;
 
     const a = attribute(vscode.Uri.file('/work/mallard/src/x.ts'));
-    assert.equal(a.repo, 'RedPandaMC/Mallard');
+    assert.equal(a.repo, 'RelativelyUnknown/Mallard');
     assert.equal(a.workspaceFolder, 'mallard');
-    assert.equal(repoForFolder(folder as vscode.WorkspaceFolder), 'RedPandaMC/Mallard');
+    assert.equal(repoForFolder(folder as vscode.WorkspaceFolder), 'RelativelyUnknown/Mallard');
   });
 
   it('falls back to the workspace folder name without a git remote', async () => {

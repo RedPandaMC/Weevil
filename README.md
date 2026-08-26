@@ -8,8 +8,8 @@
 
 **Know what GitHub Copilot and Claude Code are costing you — estimated from local logs.**
 
-[![CI](https://github.com/RedPandaMC/Mallard/actions/workflows/ci.yml/badge.svg)](https://github.com/RedPandaMC/Mallard/actions/workflows/ci.yml)
-[![Coverage](https://codecov.io/gh/RedPandaMC/Mallard/branch/main/graph/badge.svg)](https://codecov.io/gh/RedPandaMC/Mallard)
+[![CI](https://github.com/RelativelyUnknown/Mallard/actions/workflows/ci.yml/badge.svg)](https://github.com/RelativelyUnknown/Mallard/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/RelativelyUnknown/Mallard/branch/main/graph/badge.svg)](https://codecov.io/gh/RelativelyUnknown/Mallard)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 </div>
@@ -24,7 +24,7 @@ Under the hood it's a DuckDB-backed dashboard with branch-aware spend tracking, 
 
 By default, Mallard reads only local log files and sends nothing anywhere. Two background reference fetches are unconditional (no user data is sent):
 
-- **Pricing manifest** — the Copilot credit-multiplier table is fetched daily from `raw.githubusercontent.com/RedPandaMC/mallard/main/media/pricing-manifest.json`. Per-token model prices are fetched from OpenRouter's public `/api/v1/models` endpoint (LiteLLM's community price sheet as fallback).
+- **Pricing manifest** — the Copilot credit-multiplier table is fetched daily from `raw.githubusercontent.com/RelativelyUnknown/mallard/main/media/pricing-manifest.json`. Per-token model prices are fetched from OpenRouter's public `/api/v1/models` endpoint (LiteLLM's community price sheet as fallback).
 - **Currency rates** — daily FX rates from `api.frankfurter.app` for display-currency conversion.
 
 If you opt in to metric export, payloads are sent to your self-hosted server only. If you opt in to GitHub billing, the extension calls GitHub's billing API using your token.
@@ -34,7 +34,7 @@ If you opt in to metric export, payloads are sent to your self-hosted server onl
 1. Install from the Extensions view, or:
 
    ```bash
-   code --install-extension RedPandaMC.mallard
+   code --install-extension RelativelyUnknown.mallard
    ```
 
 2. Use Copilot and/or Claude Code normally. Mallard starts collecting right away.
@@ -47,14 +47,14 @@ and set `mallard.copilotLogPath` if needed.
 
 ## Documentation
 
-The [documentation site](https://redpandamc.github.io/Mallard/) has the full picture:
+The [documentation site](https://relativelyunknown.github.io/Mallard/) has the full picture:
 
-- [Features](https://redpandamc.github.io/Mallard/guide/features): everything Mallard tracks and alerts on
-- [Getting started](https://redpandamc.github.io/Mallard/guide/getting-started): installation and first-run walkthrough
-- [Configuration](https://redpandamc.github.io/Mallard/guide/configuration): budgets, alert rules, and restriction modes
-- [Self-hosting](https://redpandamc.github.io/Mallard/guide/self-hosting): the optional BYO server for cross-machine reporting
-- [Troubleshooting](https://redpandamc.github.io/Mallard/guide/troubleshooting): fixes for common setup issues
-- [Settings](https://redpandamc.github.io/Mallard/reference/settings), [Commands](https://redpandamc.github.io/Mallard/reference/commands), and [Alert rules](https://redpandamc.github.io/Mallard/reference/alert-rules) reference
+- [Features](https://relativelyunknown.github.io/Mallard/guide/features): everything Mallard tracks and alerts on
+- [Getting started](https://relativelyunknown.github.io/Mallard/guide/getting-started): installation and first-run walkthrough
+- [Configuration](https://relativelyunknown.github.io/Mallard/guide/configuration): budgets, alert rules, and restriction modes
+- [Self-hosting](https://relativelyunknown.github.io/Mallard/guide/self-hosting): the optional BYO server for cross-machine reporting
+- [Troubleshooting](https://relativelyunknown.github.io/Mallard/guide/troubleshooting): fixes for common setup issues
+- [Settings](https://relativelyunknown.github.io/Mallard/reference/settings), [Commands](https://relativelyunknown.github.io/Mallard/reference/commands), and [Alert rules](https://relativelyunknown.github.io/Mallard/reference/alert-rules) reference
 
 ## Development
 

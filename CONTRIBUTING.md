@@ -55,4 +55,4 @@ bun run docs:build     # build the VitePress site
 bun run docs:dev       # preview locally
 ```
 
-Docs live in `docs/`. The footer reads `v1 · © 2026 RedPandaMC`.
+Docs live in `docs/`. The footer reads `v1 · © 2026 RelativelyUnknown`.

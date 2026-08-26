@@ -93,7 +93,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/redpandamc/mallard-server:latest
-            ghcr.io/redpandamc/mallard-server:${{ github.sha }}
+            ghcr.io/relativelyunknown/mallard-server:latest
+            ghcr.io/relativelyunknown/mallard-server:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

@@ -146,7 +146,7 @@ jobs:
         uses: aquasecurity/trivy-action@c07df6fec6fa692e6fd1200d50aaa1fdd66f03c8 # master, pinned — was a floating branch ref
         with:
           scan-type: image
-          image-ref: ghcr.io/redpandamc/mallard-server:latest
+          image-ref: ghcr.io/relativelyunknown/mallard-server:latest
           format: sarif
           output: trivy-image.sarif
           severity: HIGH,CRITICAL
@@ -190,7 +190,7 @@ jobs:
         uses: docker/scout-action@2688993af7bafd6ba8c6a74ec652442be91dd82b # v1.23.1
         with:
           command: cves,recommendations
-          image: ghcr.io/redpandamc/mallard-server:latest
+          image: ghcr.io/relativelyunknown/mallard-server:latest
           only-severities: high,critical
           ignore-unfixed: true
           sarif-file: scout.sarif

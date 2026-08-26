@@ -4,7 +4,7 @@ A self-hosted ingest server for the Mallard VS Code extension. It receives strea
 
 ## Quick starts
 
-Credentials come from environment variables by default — a plain `.env` file (Docker Compose) or a Kubernetes Secret is a complete production setup. If you want live credential rotation without restarts, add OpenBao as the secret backend. Follow the Docker Compose or Kubernetes quickstart on the [Self-hosted server guide](https://redpandamc.github.io/Mallard/guide/self-hosting) on the docs site.
+Credentials come from environment variables by default — a plain `.env` file (Docker Compose) or a Kubernetes Secret is a complete production setup. If you want live credential rotation without restarts, add OpenBao as the secret backend. Follow the Docker Compose or Kubernetes quickstart on the [Self-hosted server guide](https://relativelyunknown.github.io/Mallard/guide/self-hosting) on the docs site.
 
 ## Architecture
 
@@ -144,7 +144,7 @@ Returns `202 Accepted` on success, `401 Unauthorized` for bad credentials, `503 
 }
 ```
 
-See the [Metrics Schema reference](https://redpandamc.github.io/Mallard/reference/metrics-schema) for the full field table and aggregation semantics (gauges vs additive counters).
+See the [Metrics Schema reference](https://relativelyunknown.github.io/Mallard/reference/metrics-schema) for the full field table and aggregation semantics (gauges vs additive counters).
 
 ### `GET /health`
 
